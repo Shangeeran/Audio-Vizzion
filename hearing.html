@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Vision | Hearing</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="index.html" style="float: left;">Welcome</a></li>
+        <li><a href="visual.html" style="float: right;">Visual Device</a></li>
+        <li><a class="active" href="hearing.html" style="float: right;">Hearing Device</a></li>
+   
+    </ul>
+</header>
+
+<div class="main-block">
+  <div class="left-part">
+    <i class="fas fa-graduation-cap"></i>
+    <h1>Register your divice </h1>
+    <img src="img/reg.png" alt="Italian Trulli" style="width: 30%;">
+  
+  </div>
+  <form action="hearing.php" method="POST">
+    
+    <div class="info">
+      <input type="text" name="DevCatId" placeholder="Device Catalog Id">
+      <input type="text" name="CatName" placeholder="Device Catalog Name">
+      <input type="text" name="Descri" placeholder="Device Description">
+      <input type="text" name="Available" placeholder="Availability Status">
+      <input type="text" name="HdMake" placeholder="Hd Make">
+      <input type="text" name="HdModel" placeholder="Hd Model">
+      
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="checkbox"><span>I agree with that <a href="#"></a></span>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<footer style="position: absolute;">
+        <button onclick="goBack()">Go Back</button>
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+</footer>
+</body>
+</html>

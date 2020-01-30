@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Vision </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <ul>
+        <li><a class="active" href="#home" style="float: left;">Welcome</a></li>
+        <li><a href="visual.html" style="float: right;">Visual Device</a></li>
+        <li><a href="hearing.html" style="float: right;">Hearing Device</a></li>
+     
+    </ul>
+</header>
+<p>Divice</p>
+    <div align="center">
+        <input class="MyButton" type="button" value="Visual Device" onclick="window.location.href='visual.html'" />
+        <input class="MyButton" type="button" value="Hearing Device" onclick="window.location.href='hearing.html'" />
+    </div>
+
+<footer style="position: absolute;">
+        <button onclick="goBack()">Go Back</button>
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+</footer>
+</body>
+</html>
